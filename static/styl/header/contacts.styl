@@ -1,0 +1,41 @@
+.contacts{
+  display: flex;
+  align-items: center;
+
+  &__feedback-btn{
+    background-image: url(../i/feedback-icon.png);
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 23px;
+    display: block;
+    background-size: cover;
+    background-color: transparent;
+    outline-color: transparent;
+    border:none;
+    margin-right: 34px;
+  }
+  &__phone-number{
+    font-size: 30px;
+    color: #f20000;
+    text-decoration: none;
+    font-family: 'Museo Sans Cyrl 700';
+    display: block;
+    line-height: 0.9;
+    padding-top: 16px;
+  }
+  &__phone{
+    text-align: right;
+  }
+  &__phone-btn{
+    color: #f20000;
+    font-size: 13px;
+    text-decoration: none;
+    border-bottom: 1px solid #f20000;
+    transition: border-color 0.6s ease;
+    display: inline-block;
+    line-height: 0.9;
+    &:hover{
+      border-color: transparent;
+    }
+  }
+}

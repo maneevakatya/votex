@@ -3,9 +3,11 @@ include blocks/blocks
 doctype html
 html(lang="ru")
 	+head
-	body
+	body.100vh
 		header.header
-			.header__logo
-				img(src="../i/logo.png", alt="logo")
+			+logo
+			+nav
+			+contacts
+		+main-catalogue
 		+footer
 		+scripts

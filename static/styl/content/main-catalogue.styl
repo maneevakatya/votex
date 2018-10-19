@@ -1,0 +1,35 @@
+.main-catalogue{
+  display: flex;
+
+  &__item{
+    display: block;
+    width: 25%;
+    text-decoration: none;
+
+    &:hover .main-catalogue__img{
+      opacity: 0.9;
+    }
+    &:hover .main-catalogue__text{
+      border-color: transparent;
+    }
+  }
+  &__img{
+    height: 637px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition:opacity 0.3s ease;
+  }
+  &__name{
+    padding-left: 22px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+  &__text{
+    font-size: 28px;
+    color: #454545;
+    border-bottom:1px solid #454545;
+    transition: border-color 0.3s ease;
+
+  }
+}

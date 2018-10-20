@@ -3,12 +3,14 @@ include blocks/blocks
 doctype html
 html(lang="ru")
 	+head
-	body.100vh
+	body
 		header.header
 			+logo
 			+nav
 			+contacts
-		+main-catalogue
+		.bg.bg--news
+		.inner-wrapper
+			+news
 		+footer
 		+agreement
 		+scripts

@@ -1,16 +1,27 @@
 .side-nav{
   max-width: 357px;
   width: 100%;
-  margin-right: 86px;
+  margin-right: 90px;
   text-align: right;
 
   &__item{
-    margin-bottom: 23px;
+    margin-bottom: 19px;
+    & ul .side-nav__link{
+      font-size: 14px;
+    }
+    & ul{
+      margin-top: 12px;
+      margin-bottom: 34px;
+    }
+    & ul .side-nav__item{
+      margin-bottom: 12px;
+    }
   }
   &__link{
     font-size: 18px;
     color: #454545;
     border-bottom:1px solid #454545;
+    text-decoration: none;
     transition: border-color 0.3s ease;
     &:hover{
       border-color: transparent;
@@ -20,4 +31,12 @@
       border-color: #f20000;
     }
   }
+    &__title{
+      font-size: 28px;
+      color: #454545;
+      font-weight: 400;
+      margin: 0;
+      text-align: right;
+      margin-bottom: 30px;
+    }
 }

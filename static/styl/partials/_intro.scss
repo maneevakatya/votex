@@ -1,0 +1,39 @@
+.intro{
+  max-width: 1592px;
+  width: 100%;
+  margin: 0 auto;
+
+  // min-height: 87.3vh;
+  min-height: 903px;
+  background-image: url(../img/scheme.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+background-position-y: 161px;
+
+
+&__card{
+  position: absolute;
+  z-index: 999;
+  bottom: 147px;
+  left: 192px;
+}
+&__101logo{
+  position: absolute;
+  z-index: 999;
+  top: 112px;
+  right: 167px;
+}
+&__text{
+  position: absolute;
+  font-family: "CoreSansM85Heavy";
+  font-size: 50px;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 1;
+  left: 50%;
+  top: 113px;
+  letter-spacing: -0.3px;
+  z-index: 9999;
+  transform: translateX(-50%) skew(-11deg);
+}
+}

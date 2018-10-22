@@ -1,0 +1,20 @@
+.map{
+  height: 596px;
+  position: relative;
+  &__title{
+    font-family: CoreSansM85Heavy;
+        font-size: 50px;
+        font-style: italic;
+        text-transform: uppercase;
+        margin: 0;
+        position: absolute;
+        left: 161px;
+        z-index: 999;
+        top: 51px;
+        margin-bottom: 40px;
+        transform: skew(-11deg);
+  }
+}
+.map #contactsmap {
+    height: 100%;
+}

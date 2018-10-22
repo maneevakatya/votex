@@ -1,0 +1,66 @@
+.fabric-info{
+  margin-bottom: 50px;
+  display: flex;
+
+  p{
+    max-width: 792px;
+    width: 100%;
+    color: #454545;
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 52px;
+  }
+  &__previews{
+    max-width: 454px;
+    width: 100%;
+    margin-right: 40px;
+  }
+  &__using{
+    display: flex;
+    max-width: 290px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  &__icon{
+    width: 58px;
+    height: 58px;
+    background-size: cover;
+    &:first-child{
+      background-image: url(../i/icon1.png);
+    }
+    &:nth-child(2){
+      background-image: url(../i/icon2.png);
+    }
+    &:nth-child(3){
+      background-image: url(../i/icon3.png);
+    }
+    &:nth-child(4){
+      background-image: url(../i/icon4.png);
+    }
+  }
+  &__imgs{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__img-big{
+    margin-bottom: 30px;
+  }
+  &__colors{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+  }
+  &__color{
+    margin-right: 47px;
+    margin-bottom: 36px;
+  }
+  &__color img{
+  margin-bottom: 15px;
+  cursor: pointer;
+  }
+  &__color span{
+  display: block;
+  text-align: center;
+  }
+}

@@ -3,6 +3,8 @@
 
   &__img{
     margin-bottom: 10px;
+    height: auto;
+    width: 100%;
   }
   &__list{
     display: flex;
@@ -15,6 +17,13 @@
     max-width: 280px;
     width: 100%;
     margin-bottom: 43px;
+    text-decoration: none;
+    color: #454545;
+    transition: opacity 0.4s ease;
+    &:hover{
+      opacity: 0.7;
+    }
+
     &:nth-child(4n){
       margin-right: 0;
     }

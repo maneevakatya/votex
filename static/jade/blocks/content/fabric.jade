@@ -3,11 +3,11 @@ mixin fabric
 		.side-nav
 			h1.side-nav__title Каталог
 			ul.side-nav__list
-				li.side-nav__item
-					a(href="#").side-nav__link.side-nav__link--active Ткани для домашнего текстиля
+				li.side-nav__item.side-nav__item--active
+					a(href="#").side-nav__link Ткани для домашнего текстиля
 					ul.side-nav__list
 						li.side-nav__item
-							a(href="#").side-nav__link.side-nav__link--active Сатиновая ткань
+							a(href="/catalogue-page2.html").side-nav__link Сатиновая ткань
 						li.side-nav__item
 							a(href="#").side-nav__link Перкалевая ткань
 						li.side-nav__item
@@ -18,18 +18,50 @@ mixin fabric
 							a(href="#").side-nav__link Льняная ткань
 				li.side-nav__item
 					a(href="#").side-nav__link Готовые изделия
+					ul.side-nav__list
+						li.side-nav__item
+							a(href="#").side-nav__link Текстиль для кухни
+						li.side-nav__item
+							a(href="#").side-nav__link Постельное бельё
+						li.side-nav__item
+							a(href="#").side-nav__link Спа и сауна
+						li.side-nav__item
+							a(href="#").side-nav__link Детский текстиль
+						li.side-nav__item
+							a(href="#").side-nav__link Столовое бельё
+						li.side-nav__item
+							a(href="#").side-nav__link Текстиль для гостиниц
 				li.side-nav__item
 					a(href="#").side-nav__link Ткани защитные для спецодежды
+					ul.side-nav__list
+						li.side-nav__item
+							a(href="#").side-nav__link Термостойкие арамидные ткани
+						li.side-nav__item
+							a(href="#").side-nav__link Огнестойкие ткани
+						li.side-nav__item
+							a(href="#").side-nav__link Антистатичные ткани
+						li.side-nav__item
+							a(href="#").side-nav__link Информация для специалистов
 		.catalogue__content
 			h2.catalogue__title Сатин гладкий
 			.fabric-info
 				.fabric-info__previews
-					img(src="img/fabric-preview.jpg").fabric-info__img-big
-					.fabric-info__imgs
-						img(src="img/fabric-preview-small.jpg").fabric-info__img-small
-						img(src="img/fabric-preview-small2.jpg").fabric-info__img-small
-						img(src="img/fabric-preview-small3.jpg").fabric-info__img-small
-						img(src="img/fabric-preview-small4.jpg").fabric-info__img-small
+					.fabric-info__main-img
+						img(src="img/fabric-preview.jpg", data-fancybox, data-index="1").fabric-info__img-big
+						.fabric-info__hide
+							a(href="img/fabric-preview-small.jpg", data-fancybox="1").fabric-info__fancybox
+							a(href="img/fabric-preview-small2.jpg", data-fancybox="1").fabric-info__fancybox
+							a(href="img/fabric-preview-small3.jpg", data-fancybox="1").fabric-info__fancybox
+							a(href="img/fabric-preview-small4.jpg", data-fancybox="1").fabric-info__fancybox
+					.fabric-info__imgs.owl-carousel.slide
+						.fabric-info__img
+							img(src="img/fabric-preview-small.jpg", data-index="1", data-original="img/fabric-preview-small.jpg").fabric-info__img-small
+						.fabric-info__img
+							img(src="img/fabric-preview-small2.jpg", data-index="2", data-original="img/fabric-preview-small2.jpg").fabric-info__img-small
+						.fabric-info__img
+							img(src="img/fabric-preview-small3.jpg", data-index="3", data-original="img/fabric-preview-small3.jpg").fabric-info__img-small
+						.fabric-info__img
+							img(src="img/fabric-preview-small4.jpg", data-index="4", data-original="img/fabric-preview-small4.jpg").fabric-info__img-small
 				.fabric-info__selection
 					ul.fabric-info__using
 						li.fabric-info__icon

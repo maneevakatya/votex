@@ -6,6 +6,13 @@
 
   &__item{
     margin-bottom: 19px;
+    &:not(.side-nav__item--active) .side-nav__list{
+      display: none;
+    }
+    &--active > .side-nav__link{
+      color: #f20000;
+      border-color: #f20000;
+    }
     & ul .side-nav__link{
       font-size: 14px;
     }
@@ -25,10 +32,6 @@
     transition: border-color 0.3s ease;
     &:hover{
       border-color: transparent;
-    }
-    &--active{
-      color: #f20000;
-      border-color: #f20000;
     }
   }
     &__title{

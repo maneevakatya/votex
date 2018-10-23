@@ -1,14 +1,30 @@
 .fabrics{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  &:after{
+    content:"";
+    width: 250px;
+  }
   &__item{
   display: flex;
   flex-direction: column;
   margin-bottom: 58px;
+  margin-right: 22px;
+  text-decoration: none;
+  color: #454545;
+  max-width: 19%;
+  transition: opacity 0.4s ease;
+  &:hover{
+    opacity: 0.7;
+  }
+  &:nth-child(5n){
+    margin-right: 0;
+  }
   }
   &__img{
     margin-bottom: 12px;
+    width: 100%;
+    height: auto;
   }
   span{
     font-size: 16px;

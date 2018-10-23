@@ -3,11 +3,11 @@ mixin catalogue2
 		.side-nav
 			h1.side-nav__title Каталог
 			ul.side-nav__list
-				li.side-nav__item
-					a(href="#").side-nav__link.side-nav__link--active Ткани для домашнего текстиля
+				li.side-nav__item.side-nav__item--active
+					a(href="#").side-nav__link Ткани для домашнего текстиля
 					ul.side-nav__list
-						li.side-nav__item
-							a(href="#").side-nav__link.side-nav__link--active Сатиновая ткань
+						li.side-nav__item.side-nav__item--active
+							a(href="/catalogue-page2.html").side-nav__link Сатиновая ткань
 						li.side-nav__item
 							a(href="#").side-nav__link Перкалевая ткань
 						li.side-nav__item
@@ -18,40 +18,62 @@ mixin catalogue2
 							a(href="#").side-nav__link Льняная ткань
 				li.side-nav__item
 					a(href="#").side-nav__link Готовые изделия
+					ul.side-nav__list
+						li.side-nav__item
+							a(href="#").side-nav__link Текстиль для кухни
+						li.side-nav__item
+							a(href="#").side-nav__link Постельное бельё
+						li.side-nav__item
+							a(href="#").side-nav__link Спа и сауна
+						li.side-nav__item
+							a(href="#").side-nav__link Детский текстиль
+						li.side-nav__item
+							a(href="#").side-nav__link Столовое бельё
+						li.side-nav__item
+							a(href="#").side-nav__link Текстиль для гостиниц
 				li.side-nav__item
 					a(href="#").side-nav__link Ткани защитные для спецодежды
+					ul.side-nav__list
+						li.side-nav__item
+							a(href="#").side-nav__link Термостойкие арамидные ткани
+						li.side-nav__item
+							a(href="#").side-nav__link Огнестойкие ткани
+						li.side-nav__item
+							a(href="#").side-nav__link Антистатичные ткани
+						li.side-nav__item
+							a(href="#").side-nav__link Информация для специалистов
 		.catalogue__content
 			h2.catalogue__title Сатиновая ткань
-			ul.fabrics
-				li.fabrics__item
+			div.fabrics
+				a(href="/fabric-page.html").fabrics__item
 					img(src="img/fabric-img.jpg").fabrics__img
 					span Сатин гладкий
-				li.fabrics__item
+				a(href="#").fabrics__item
 					img(src="img/fabric-img.jpg").fabrics__img
 					span Сатин гладкий
-				li.fabrics__item
+				a(href="#").fabrics__item
 					img(src="img/fabric-img.jpg").fabrics__img
 					span Сатин гладкий
-				li.fabrics__item
+				a(href="#").fabrics__item
 					img(src="img/fabric-img.jpg").fabrics__img
 					span Сатин гладкий
-				li.fabrics__item
+				a(href="#").fabrics__item
 					img(src="img/fabric-img.jpg").fabrics__img
 					span Сатин гладкий
-				li.fabrics__item
+				a(href="#").fabrics__item
 					img(src="img/fabric-img.jpg").fabrics__img
 					span Сатин гладкий
-				li.fabrics__item
+				a(href="#").fabrics__item
 					img(src="img/fabric-img.jpg").fabrics__img
 					span Сатин гладкий
-				li.fabrics__item
+				a(href="#").fabrics__item
 					img(src="img/fabric-img.jpg").fabrics__img
 					span Сатин гладкий
-				li.fabrics__item
+				a(href="#").fabrics__item
 					img(src="img/fabric-img.jpg").fabrics__img
 					span Сатин гладкий
-				li.fabrics__item
+				a(href="#").fabrics__item
 					img(src="img/fabric-img.jpg").fabrics__img
 					span Сатин гладкий
-			button(type="button").btn.fabrics Показать еще
+			button(type="button").btn.more Показать еще
 			+docs

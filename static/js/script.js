@@ -34,7 +34,13 @@
   nav: false,
   dots: false,
   items:4,
-  margin:10
+  margin:10,
+  responsiveClass:true,
+  responsive:{
+	  0: {
+	  nav: true
+  }
+  }
 });
 
 

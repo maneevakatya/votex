@@ -13,17 +13,7 @@
 			  $(window).width() <= 1024 && $(".nav").slideToggle();
 		  }
 	});
-    	$(".side-nav > .side-nav__list > .side-nav__item > .side-nav__link").click(function(e) {
-		$(".side-nav__item > .side-nav__link").next(".side-nav__list").slideUp();
-		$(this).next(".side-nav__list").slideDown();
-		$(".side-nav__item > .side-nav__link").parent().removeClass("side-nav__item--active");
-		$(this).parent().addClass("side-nav__item--active");
-	});
 
-	$(".side-nav__list ul .side-nav__link").click(function(e) {
-		$(".side-nav__list ul .side-nav__link").parent().removeClass("side-nav__item--active");
-		$(this).parent().addClass("side-nav__item--active");
-	});
 
 	$(".burger-menu").click(function() {
 	  $(".nav").slideToggle();

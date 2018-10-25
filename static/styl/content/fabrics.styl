@@ -12,16 +12,25 @@
   margin-right: 22px;
   text-decoration: none;
   color: #454545;
-  max-width: 19%;
+  max-width: 18%;
   transition: opacity 0.4s ease;
+  &:nth-child(5n){
+    margin-right: 0;
+  }
   &:hover{
     opacity: 0.7;
   }
   }
   &__img{
+    height: auto;
+    display: block;
+    width: 100%;
+  }
+  &__img-wrapper{
     margin-bottom: 12px;
     width: 100%;
-    height: auto;
+    position: relative;
+    overflow: hidden;
   }
   span{
     font-size: 16px;

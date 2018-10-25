@@ -20,8 +20,8 @@ ul{
 	margin: 0;
 	padding: 0;
 }
-body.100vh{
-	max-height: 100vh;
+body.vh{
+	height: 100vh;
 	overflow: hidden;
 }
 body.ovh{
@@ -52,6 +52,7 @@ body.ovh{
 }
 .btn.news-more{
 	margin-top: 32px;
+	margin-bottom: 75px;
 }
 .btn.more{
 	margin-top: -7px;
@@ -59,8 +60,34 @@ body.ovh{
 .btn.request{
 	margin-top: 24px;
 }
+.owl-carousel .owl-nav .owl-prev{
+	border:0;
+	background-color: transparent;
+	width: 50px;
+	position: absolute;
+	height: 50px;
+	top: 50%;
+	transform:translateY(-50%);
+	left: 30px;
+	font-size: 0;
+	outline-color: transparent;
+	background-image: url("../i/arrowhead-thin-outline-to-the-left.svg");
+}
+ .owl-carousel .owl-nav .owl-next{
+		border:0;
+		background-color: transparent;
+		width: 50px;
+		outline-color: transparent;
+		font-size: 0;
+		position: absolute;
+		top: 50%;
+		transform:translateY(-50%);
+		right: 30px;
+		height: 50px;
+		background-image: url("../i/arrow-point-to-right.svg");
+ }
 .burger-menu {
-  width: 40px;
+  width: 38px;
   height: 30px;
   background: transparent;
   border: 0;
@@ -106,7 +133,18 @@ body.ovh{
 .burger-menu span:after {
     transition-property: bottom, transform;
 }
+.burger-menu.is-active span {
+    background: none;
+}
 
+.burger-menu.is-active span:before {
+    top: 0;
+    transform: rotate(45deg);
+}
+.burger-menu.is-active span:after {
+    bottom: 0;
+    transform: rotate(-45deg);
+}
 @media screen and (max-width: 1850px) {
 .docs__item{
 	padding-left: 130px;
@@ -122,9 +160,7 @@ body.ovh{
 .docs__link{
 	display: block;
 }
-.fabrics__item{
-	max-width: 18%;
-}
+
 .docs__item:before{
 	background-repeat: no-repeat;
 	left: 30px;
@@ -170,9 +206,23 @@ body.ovh{
 	.nav__link {
     font-size: 20px;
 }
+.nav__list{
+	margin-right: 0;
+}
+
 .main-catalogue__text {
     font-size: 21px;
 	}
+.contacts__feedback-btn{
+	margin-right: 20px;
+}
+.social__list{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.social{
+	margin-right: 0;
+}
 .contacts__phone-number {
     font-size: 27px;
 }
@@ -209,7 +259,24 @@ body.ovh{
 .nav__link {
 	font-size: 18px;
 	}
-
+.fabrics{
+	margin-bottom: 28px;
+}
+.contacts__phone{
+	max-width: 220px;
+}
+.catalogue__item-img{
+	margin-top: 4px;
+}
+.news__list{
+	padding-top: 67px;
+}
+.btn.news-more{
+	margin-bottom: 52px;
+}
+.main-catalogue{
+	height: calc(100vh - 211px);
+}
 .news__inner{
 	flex-shrink: 0.8;
 }
@@ -217,7 +284,7 @@ body.ovh{
 	font-size: 13px;
 }
 .side-nav__item ul .side-nav__link{
-	font-size: 12px;
+	font-size: 13px;
 }
 .news__item{
 	margin-bottom: 20px;
@@ -229,9 +296,7 @@ body.ovh{
 	font-size: 14px;
 	line-height: 1.5;
 }
-.catalogue__item-img{
-	height: 200px;
-}
+
 .fabrics__item{
 	margin-bottom: 30px;
 	margin-right: 15px;
@@ -246,7 +311,7 @@ body.ovh{
 	width: 80px;
 }
 .side-nav__link {
-    font-size: 13px;
+    font-size: 15px;
 	}
 .company__text p {
     font-size: 13px;
@@ -290,12 +355,19 @@ body.ovh{
 .news__inner{
 	flex-shrink: 1;
 }
+.catalogue__item-img{
+	  margin-top: 4px;
+    max-width: 291px;
+}
 .news .side-nav {
     flex-shrink: 2.2;
 }
 .fabric-info__color {
     margin-right: 15px;
     width: 40px;
+}
+.main-catalogue {
+    height: calc(100vh - 190px);
 }
 .fabric-info p{
 	font-size: 13px;
@@ -314,12 +386,12 @@ body.ovh{
 .catalogue__item-text p{
 	font-size: 13px;
 }
-.catalogue__item{
-	align-items: center;
-}
+
 .catalogue__item-img {
-    height: 170px;
 		margin-right: 23px;
+}
+.catalogue__item-text h3{
+	font-size: 19px;
 }
 .docs__item:before{
 	background-size: 70%;
@@ -342,15 +414,15 @@ body.ovh{
 .nav__list{
 	flex-shrink: 0.6;
 }
-.side-nav__link {
-    font-size: 12px;
-	}
+
 .company__text p {
     font-size: 12px;
+		margin-top: -7px;
 }
 .side-nav__item {
     margin-bottom: 15px;
 }
+
 .company__img{
 	width: 200px;;
 }
@@ -391,6 +463,24 @@ body.ovh{
 }
 }
 @media screen and (max-width: 1023px) {
+	body.vh{
+		overflow: scroll;
+		height: auto;
+	}
+	.header{
+		  position: fixed;
+	    width: 100%;
+			top: 0;
+			z-index: 999;
+			background-color: #fff;
+	}
+	.main-catalogue{
+		padding-top: 114px;
+	}
+	.bg{
+		height: 100px;
+		margin-top: 114px;
+	}
   .nav{
 		display: none;
     background: #fff;
@@ -405,8 +495,11 @@ body.ovh{
     padding-top: 20px;
     padding-right: 40px;
     padding-bottom: 50px;
-    overflow: scroll;
+    overflow-y: scroll;
 	}
+.side-nav__item {
+    margin-bottom: 25px;
+}
 .main-catalogue{
 	flex-direction: column;
 	height: auto;
@@ -554,7 +647,7 @@ body.ovh{
     font-size: 13px;
 }
 .catalogue__content{
-	margin-top: 30px;
+	margin-top: 15px;
 }
 .side-nav__item--active .side-nav__link:hover{
 	border-color: #f20000;
@@ -570,7 +663,7 @@ body.ovh{
 }
 .side-nav__title{
 	text-align: left;
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 }
 .side-nav{
 	text-align: left;
@@ -598,6 +691,9 @@ body.ovh{
 .contacts__phone-number{
 	padding-top: 0;
 }
+.company .side-nav__title{
+	margin-bottom: 5px;
+}
 }
 @media screen and (max-width: 900px) {
 	.catalogue__item-img{
@@ -614,8 +710,55 @@ body.ovh{
 	padding-left: 20px;
 	padding-right: 20px;
 }
+.bg {
+    margin-top: 107px;
+}
+.fabric-info__previews{
+	display: none;
+}
+.fabric-info__mobile .fabric-info__main-img{
+	height: 400px;
+}
+.fabric-info__mobile-wrapper{
+	display: block;
+	margin-bottom: 35px;
+}
+.fabric-info__colors{
+	padding-left: 0;
+}
+.nav > .nav__list{
+	height: calc(100vh - 269px);
+}
+.main-catalogue {
+    padding-top: 107px;
+}
+.side-nav__title{
+	font-size: 24px;
+}
+.btn.request{
+	margin-bottom: 44px;
+}
+.fabric-info{
+	margin-bottom: 0;
+}
 .fabric-info__main-img{
 	max-width: unset;
+}
+.inner-wrapper{
+	padding-top: 20px;
+}
+.company__info{
+	padding-top: 0;
+}
+
+.contacts{
+	position: fixed;
+  background: #fff;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+	z-index: 999;
+  padding: 20px;
 }
 .main-catalogue__img {
     height: 437px;
@@ -699,12 +842,45 @@ body.ovh{
 .fabric-info__color{
 	margin-right: 11px;
 }
+.fabric-info__color {
+    margin-right: 13px;
+		width: 16%;
+}
+.fabric-info__color:nth-child(5n){
+    margin-right: 0;
+}
+.fabrics__img{
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+  }
+.fabrics__img-wrapper{
+    margin-bottom: 12px;
+    width: 100%;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+  }
 	.company__picture{
 		margin-right: 0;
 		text-align: center;
 		width: 90%;
     margin: 0 auto;
 	}
+.news__item{
+	margin-bottom: 50px;
+}
+.news__item:last-child{
+      margin-bottom: 0;
+}
+.btn.news-more{
+	margin-top: 50px;
+}
 .fabrics__item{
 	width: 100%;
 }
@@ -718,6 +894,7 @@ body.ovh{
 }
 	.company__text p{
 		font-size: 14px;
+		margin-top: -9px;
 	}
 	.company__text{
 		margin-top: 20px;
@@ -733,20 +910,58 @@ body.ovh{
 	.fabric-info__color{
 		width: 43px;
 	}
+	.fabric-info__color {
+    width: 16%;
+}
+.fabric-info__color {
+    margin-right: 13px;
+}
+	.fabrics__img-wrapper{
+		height: 180px;
+	}
 	.catalogue__item-text{
 		padding-left: 25px;
     padding-right: 25px;
     text-align: justify;
 	}
+	.catalogue__item-text h3{
+		margin-left: 20px;
+	}
+	.catalogue__item-img {
+    max-width: unset;
+}
+.catalogue__item {
+    margin-left: -20px;
+    margin-right: -20px;
+}
 }
 @media screen and (max-width: 374px) {
 .contacts__phone-number {
     font-size: 16px;
 }
+.main-catalogue {
+    padding-top: 96px;
+}
+.fabric-info__color {
+    width: 15%;
+}
 .footer{
 	flex-direction: column;
   align-items: flex-start;
 }
+.fabrics__img-wrapper {
+    height: 140px;
+}
+.bg {
+    margin-top: 96px;
+}
+.nav > .nav__list{
+	height: calc(100vh - 160px);
+}
+.fabric-info__icon {
+    width: 50px;
+    height: 50px;
+	}
 .footer__left{
 	margin-bottom: 10px;
 }
@@ -765,9 +980,7 @@ body.ovh{
 .nav{
 	top: 96px;
 }
-.burger-menu{
-	height: 29px;
-}
+
 .burger-menu span:after {
     bottom: 11px;
 }
@@ -775,12 +988,19 @@ body.ovh{
     top: 11px;
 }
 .docs__link {
-    font-size: 14px;
+    font-size: 13px;
 }
 .docs__item {
-    padding-left: 90px;
+    padding-left: 105px;
+		height: 100px;
+	}
+	.docs__item--standarts:before{
+		top: 18px;
+	}
+	.docs__item--trials:before{
+		top: 10px;
 	}
 .docs__item:before {
-    background-size: 70%;
+    background-size: 80%;
 }
 }

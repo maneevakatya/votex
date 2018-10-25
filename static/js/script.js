@@ -17,6 +17,7 @@
 
 	$(".burger-menu").click(function() {
 	  $(".nav").slideToggle();
+	  $(this).toggleClass("is-active");
 	  $("body, html").toggleClass("ovh");
   });
 
@@ -33,9 +34,32 @@
   }
 });
 
+$(".slide2").owlCarousel({
+nav: false,
+dots: false,
+items:1,
+margin:10,
+responsiveClass:true,
+responsive:{
+	0: {
+	nav: true
+}
+}
+});
 
+$(window).on('load',function(){
+			 if($(window).width() <= 1023){
+			   $('.nav > .nav__list').mCustomScrollbar({theme:"dark"});
+	 }
+ });
+ $("body").on('resize',function(){
+	 var fh = $('.footer').outerHeight();
+	 var hh = $('.header').outerHeight();
+	 var h = fh + hh;
+ 	$('.inner-wrapper').css('min-height', 'calc(100vh - '+ h +'px)');
+}).trigger("resize");
 
-	 $(".fabric-info__main-img").click(function() {
+	 $(".fabric-info__previews .fabric-info__main-img").click(function() {
 				var index = parseInt($(this).children().attr("data-index"),10)-1;
 				$(".fabric-info__fancybox")[index].click();
 	 });

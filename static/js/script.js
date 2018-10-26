@@ -59,7 +59,7 @@ $(window).on('load',function(){
  	$('.inner-wrapper').css('min-height', 'calc(100vh - '+ h +'px)');
 }).trigger("resize");
 
-	 $(".fabric-info__previews .fabric-info__main-img").click(function() {
+	 $(".fabric-info__main-img").click(function() {
 				var index = parseInt($(this).children().attr("data-index"),10)-1;
 				$(".fabric-info__fancybox")[index].click();
 	 });

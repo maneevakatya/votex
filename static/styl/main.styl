@@ -178,7 +178,6 @@ body.ovh{
 	}
 	.catalogue__item-text p{
 	font-size: 15px;
-  line-height: 2.1;
 	}
 	.news__item{
 		max-width: 22%
@@ -196,7 +195,6 @@ body.ovh{
 	}
 .catalogue__item-text p {
     font-size: 15px;
-    line-height: 1.8;
 }
 .catalogue__content {
     flex-shrink: 0.9;
@@ -263,6 +261,9 @@ body.ovh{
 .news__inner{
 	flex-shrink: 0.5;
 }
+.catalogue__item-text p{
+	font-size: 14px;
+}
 }
 @media screen and (max-width: 1365px) {
 .nav__link {
@@ -301,10 +302,6 @@ body.ovh{
 }
 .contacts__phone-number {
     font-size: 25px;
-}
-.catalogue__item-text p{
-	font-size: 14px;
-	line-height: 1.5;
 }
 
 .fabrics__item{
@@ -396,7 +393,7 @@ body.ovh{
 	margin-bottom: 0;
 }
 .catalogue__item-text p{
-	font-size: 13px;
+	font-size: 12px;
 }
 
 .catalogue__img-wrap {
@@ -479,6 +476,9 @@ body.ovh{
 		overflow: scroll;
 		height: auto;
 	}
+.bg{
+	background-position: center;
+}
 	.header{
 		  position: fixed;
 	    width: 100%;
@@ -572,6 +572,7 @@ body.ovh{
 	.nav__list{
 		flex-direction: column;
 		margin-bottom: 50px;
+		justify-content: flex-start;
 	}
 	.header{
 		justify-content: space-between;
@@ -838,7 +839,6 @@ body.ovh{
 }
 .catalogue__item-text p{
 	font-size: 16px;
-	line-height: 2;
 }
 .catalogue__item{
 	position: relative;
@@ -851,6 +851,29 @@ body.ovh{
 	}
 .fabric-info__mobile-img {
     height: 200px;
+}
+.fabric-info__icon {
+    width: 40px;
+    height: 40px;
+	}
+.fabric-info__using{
+	width: 70%;
+}
+.news__img{
+	width: 100%;
+    margin-bottom: 10px;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+}
+.news__img-wrap{
+	height: 200px;
+  overflow: hidden;
 }
 .owl-carousel .owl-nav .owl-next {
     right: 5px;
@@ -966,10 +989,7 @@ body.ovh{
 	.catalogue__item-img {
     max-width: unset;
 }
-.catalogue__item {
-    margin-left: -20px;
-    margin-right: -20px;
-}
+
 .fabric-info__mobile-img:before{
 	width: 40px;
 	height: 40px;
@@ -985,7 +1005,13 @@ body.ovh{
 .fabric-info__color {
     width: 15%;
 }
+.fabric-info__using{
+	width: 80%;
+}
 .fabric-info__mobile-img {
+    height: 150px;
+}
+.news__img-wrap {
     height: 150px;
 }
 .footer{
@@ -1001,10 +1027,6 @@ body.ovh{
 .nav > .nav__list{
 	height: calc(100vh - 160px);
 }
-.fabric-info__icon {
-    width: 50px;
-    height: 50px;
-	}
 .footer__left{
 	margin-bottom: 10px;
 }
